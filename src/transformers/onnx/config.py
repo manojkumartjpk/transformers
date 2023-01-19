@@ -38,10 +38,10 @@ if is_vision_available():
 logger = logging.get_logger(__name__)
 
 
-DEFAULT_ONNX_OPSET = 11
+DEFAULT_ONNX_OPSET = 14
 
 # 2 Gb
-EXTERNAL_DATA_FORMAT_SIZE_LIMIT = 2 * 1024 * 1024 * 1024
+EXTERNAL_DATA_FORMAT_SIZE_LIMIT = 120 * 1024 * 1024 * 1024
 
 
 @dataclasses.dataclass
