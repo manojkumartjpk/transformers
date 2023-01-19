@@ -243,6 +243,7 @@ class DepsTableUpdateCommand(Command):
         with open(target, "w", encoding="utf-8", newline="\n") as f:
             f.write("\n".join(content))
 
+
 extras = {}
 
 extras["ja"] = deps_list("fugashi", "ipadic", "unidic_lite", "unidic", "sudachipy", "sudachidict_core", "rhoknp")
@@ -412,8 +413,8 @@ install_requires = [
 ]
 
 setup(
-    name="transformers",
-    version="4.26.0.dev0",  # expected format is one of x.y.z.dev0, or x.y.z.rc1 or x.y.z (no to dashes, yes to dots)
+    name="in-transformers",
+    version="1.0.0",  # expected format is one of x.y.z.dev0, or x.y.z.rc1 or x.y.z (no to dashes, yes to dots)
     author="The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)",
     author_email="transformers@huggingface.co",
     description="State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow",

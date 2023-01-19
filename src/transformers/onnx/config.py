@@ -40,7 +40,7 @@ logger = logging.get_logger(__name__)
 
 DEFAULT_ONNX_OPSET = 14
 
-# 2 Gb
+# 120 Gb
 EXTERNAL_DATA_FORMAT_SIZE_LIMIT = 120 * 1024 * 1024 * 1024
 
 
